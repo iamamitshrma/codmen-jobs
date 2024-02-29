@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Baloo_Paaji_2 } from "next/font/google";
 import "./globals.css";
-import Provider from "@/components/Provider";
+import AuthProvider from "@/components/AuthProvider";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import Navbar from "@/components/Navbar";
 
 const baloo = Baloo_Paaji_2({ subsets: ["latin"] });
 
@@ -18,11 +20,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={baloo.className}>
-        <Provider>
-          <main className="app">
-            {children}
-          </main>
-        </Provider>
+        <AuthProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+          >
+            <Navbar />
+            <main className="app">
+              {children}
+            </main>
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

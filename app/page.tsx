@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="container">
+    <div className="container py-4">
         <p>hello</p>
-    </main>
+    </div>
   );
 }
