@@ -4,6 +4,7 @@ import "./globals.css";
 import AuthProvider from "@/components/AuthProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
 
 const baloo = Baloo_Paaji_2({ subsets: ["latin"] });
 
@@ -27,8 +28,11 @@ export default function RootLayout({
             enableSystem
           >
             <Navbar />
-            <main className="app">
-              {children}
+            <main className="container flex flex-row gap-[1rem]">
+              <Sidebar />
+              <aside className="w-[85%] p-4 dark:bg-custom_card_bg h-max_height rounded-md dark:border-none border-[1px]">
+                {children}
+              </aside>
             </main>
           </ThemeProvider>
         </AuthProvider>

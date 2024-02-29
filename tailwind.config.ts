@@ -12,14 +12,19 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
+      padding: {
+        DEFAULT: "1rem",
+        md: "1rem",
+        lg: "1rem"
       },
+      // screens: {
+      //   "2xl": "1400px",
+      // },
     },
     extend: {
       colors: {
         custom_orange: "#EF4040",
+        custom_card_bg: "#1e1e1e",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -73,6 +78,9 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      height: {
+        max_height: "calc(94vh - 56px)"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
