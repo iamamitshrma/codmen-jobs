@@ -1,11 +1,8 @@
 
-
-
-
 'use client'
-
 import React from 'react'
 import { motion } from "framer-motion"
+import Sidebar from '@/components/Sidebar'
 
 export default function RootTemplate({ children }: { children: React.ReactNode }) {
     return <motion.div

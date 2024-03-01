@@ -28,11 +28,11 @@ export default function RootLayout({
             enableSystem
           >
             <Navbar />
-            <main className="container flex flex-row gap-[1rem]">
+            <main className="container flex gap-[1rem]">
               <Sidebar />
-              <aside className="w-[85%] p-4 dark:bg-custom_card_bg h-max_height rounded-md dark:border-none border-[1px]">
+              <div className="h-max_height dark:bg-custom_card_bg bg-white rounded-md p-[1rem] w-[85%] overflow-auto dark:border-none border-[1px]">
                 {children}
-              </aside>
+              </div>
             </main>
           </ThemeProvider>
         </AuthProvider>

@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-        <div className="container py-4">
+        <div>
             <p>hello</p>
         </div>
     )
