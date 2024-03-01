@@ -6,8 +6,8 @@ export default function Home() {
     <div className="">
       <FeedPost />
       {
-        [...new Array(6)].map((item) => {
-          return <Feed />
+        [...new Array(6)].map((item, index) => {
+          return <Feed key={index * 5} />
         })
       }
     </div>
