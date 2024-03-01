@@ -29,6 +29,9 @@ const adminSchema = new Schema({
         type: String,
         required: [true, "Avatar is required!"],
     },
+    officialDocumentLink: {
+        type: String
+    },
     password: {
         type: String,
         required: [true, "Password is required!"]
