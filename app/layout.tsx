@@ -30,7 +30,7 @@ export default function RootLayout({
             <Navbar />
             <main className="container flex gap-[1rem]">
               <Sidebar />
-              <div className="h-max_height dark:bg-custom_card_bg bg-white rounded-md p-[1rem] w-[85%] overflow-auto dark:border-none border-[1px]">
+              <div className="dark:bg-custom_card_bg bg-white rounded-md p-[1rem] w-[85%] overflow-auto dark:border-none border-[1px]">
                 {children}
               </div>
             </main>
