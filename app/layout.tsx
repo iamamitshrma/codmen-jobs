@@ -9,7 +9,7 @@ import Sidebar from "@/components/Sidebar";
 const baloo = Baloo_Paaji_2({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Codmen Jobs",
+  title: "Codemen Jobs",
   description: "Discover Your Next Career Opportunity with Codmen Jobs - Your Premier Job Portal Application for Seamless Employment Matching and Recruitment Solutions!",
 };
 

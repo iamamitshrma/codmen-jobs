@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="shadow-md shadow-[#cfcfcf] dark:shadow-custom_orange dark:shadow-md py-2 mb-[1rem]">
             <nav className="container flex justify-between items-center">
                 <div>
-                    <Link className="font-bold text-2xl line-clamp-3" href="/">codmen <span className="text-custom_orange">J</span></Link>
+                    <Link className="font-bold text-2xl line-clamp-3" href="/">codemen <span className="text-custom_orange">J</span></Link>
                 </div>
                 <ul className="flex items-center">
                     <li className="me-6"><ThemeToggle /></li>
