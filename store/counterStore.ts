@@ -7,5 +7,5 @@ export const useCounterStore = create(persist((set) => ({
   resetCounter: () => set({ counter: 0 }),
 }), {
   name: "counter-data",
-  storage: createJSONStorage(() => sessionStorage)
+  storage: createJSONStorage(() => sessionStorage),
 }))

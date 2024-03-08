@@ -1,12 +1,8 @@
-'use client'
-
 import { Input } from "@/components/ui/input"
-import { useCounterStore } from "../store"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function MessagesPage() {
-    const { increasePopulation, counter, resetCounter } = useCounterStore((state: any) => state)
     return (
         <div className="flex items-center gap-4">
             <div className="w-[70%] h-[80vh] rounded-md dark:bg-black border-[0.5px] flex flex-col justify-between gap-1">
@@ -45,9 +41,6 @@ export default function MessagesPage() {
                     })
                 }
             </div>
-            {/* <h1 className="mb-10">Total Count: <span className="font-bold text-2xl text-custom_orange">{counter}</span></h1>
-            <button className="bg-gray-100 text-black p-2 rounded-lg me-5" onClick={increasePopulation}>Increase Counter</button>
-            <button className="border-[1px] text-white bg-gray-500 p-2 rounded-lg me-5" onClick={resetCounter}>Reset Counter</button> */}
         </div>
     )
 }
