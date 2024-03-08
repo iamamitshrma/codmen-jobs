@@ -10,7 +10,7 @@ export default function AvailableJobCard({isApplied}: {isApplied: Boolean}) {
                     <AvatarFallback className="rounded-sm">KS</AvatarFallback>
                 </Avatar>
                 <div>
-                    <h2 className="font-bold text-custom_orange">thecodemen</h2>
+                    <h2 className="font-bold text-custom_primary">thecodemen</h2>
                     <p className="text-sm mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
                 <span className="text-xs font-bold ml-auto">10-50 employees</span>
@@ -25,11 +25,11 @@ export default function AvailableJobCard({isApplied}: {isApplied: Boolean}) {
                 <hr className="mb-2 bg-gray-500 h-[1px]" />
                 <h3 className="font-bold mb-2">Skill Required:</h3>
                 <ul className="flex gap-2 flex-wrap">
-                    <li className="border-[1px] text-custom_orange px-2 py-1 rounded-lg">React</li>
-                    <li className="border-[1px] text-custom_orange px-2 py-1 rounded-lg">NextJS</li>
-                    <li className="border-[1px] text-custom_orange px-2 py-1 rounded-lg">React Native</li>
-                    <li className="border-[1px] text-custom_orange px-2 py-1 rounded-lg">Nodejs</li>
-                    <li className="border-[1px] text-custom_orange px-2 py-1 rounded-lg">MongoDB</li>
+                    <li className="border-[1px] text-custom_primary px-2 py-1 rounded-lg">React</li>
+                    <li className="border-[1px] text-custom_primary px-2 py-1 rounded-lg">NextJS</li>
+                    <li className="border-[1px] text-custom_primary px-2 py-1 rounded-lg">React Native</li>
+                    <li className="border-[1px] text-custom_primary px-2 py-1 rounded-lg">Nodejs</li>
+                    <li className="border-[1px] text-custom_primary px-2 py-1 rounded-lg">MongoDB</li>
                 </ul>
             </div>
         </div>

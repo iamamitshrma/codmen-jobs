@@ -39,14 +39,14 @@ export default function Feed() {
             </CardContent>
             <CardFooter className="flex flex-col items-start w-full pb-2 px-3">
                 <div className="flex items-center font-thin text-sm">
-                    <span className="text-custom_orange me-5">420 likes</span>
-                    <span className="text-custom_orange">10 shares</span>
+                    <span className="text-custom_primary me-5">420 likes</span>
+                    <span className="text-custom_primary">10 shares</span>
                 </div>
                 <hr className="h-[1px] w-full my-3" />
                 <div className="flex items-center gap-14 w-full">
-                    <div className="flex items-center cursor-pointer hover:text-custom_orange transition-all"><Heart className="me-4" size={16} /><span>Like</span></div>
+                    <div className="flex items-center cursor-pointer hover:text-custom_primary transition-all"><Heart className="me-4" size={16} /><span>Like</span></div>
                     {/* <div className="flex items-center"><MessageSquareDashed className="me-4" size={16} /><span>Comment</span></div> */}
-                    <div className="flex items-center cursor-pointer hover:text-custom_orange transition-all"><SendHorizontal className="me-4" size={16} /><span>Share</span></div>
+                    <div className="flex items-center cursor-pointer hover:text-custom_primary transition-all"><SendHorizontal className="me-4" size={16} /><span>Share</span></div>
                 </div>
             </CardFooter>
         </Card>

@@ -23,8 +23,8 @@ const config = {
     },
     extend: {
       colors: {
-        custom_orange: "#EF4040",
-        custom_card_bg: "#1e1e1e",
+        custom_primary: "#008080",
+        custom_card_bg: "#1C2321",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

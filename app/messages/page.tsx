@@ -35,7 +35,7 @@ export default function MessagesPage() {
                 {
                     [...new Array(20)].map((item, index) => {
                         return (
-                            <div key={index + 1} className={`cursor-pointer flex items-center mb-2 dark:bg-custom_card_bg p-2 border-[0.5px] dark:border-none rounded-md ${index === 0 && "dark:bg-custom_orange"}`}>
+                            <div key={index + 1} className={`cursor-pointer flex items-center mb-2 dark:bg-custom_card_bg p-2 border-[0.5px] dark:border-none rounded-md ${index === 0 && "dark:bg-custom_primary"}`}>
                                 <Avatar className="outline-none focus:hidden me-4">
                                     <AvatarImage src="" />
                                     <AvatarFallback>AS</AvatarFallback>
