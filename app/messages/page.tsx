@@ -4,13 +4,13 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function MessagesPage() {
     return (
-        <div className="flex items-center gap-4">
-            <div className="w-[70%] h-[80vh] rounded-md dark:bg-black border-[0.5px] flex flex-col justify-between gap-1">
+        <div className="flex items-center gap-4 h-[78vh]">
+            <div className="w-[70%] h-[78vh] rounded-md dark:bg-black border-[0.5px] dark:border-none flex flex-col justify-between gap-1">
                 <div className="overflow-auto w-[100%] h-[90%] p-2">
                     {
                         [...new Array(20)].map((item, index) => {
                             return (
-                                <div key={index + 1} className={`flex flex-col dark:bg-custom_card_bg border-[0.5px] mb-5 w-2/3 rounded-md rounded-tr-none p-2 ${index % 2 === 0 && "ml-auto"}`}>
+                                <div key={index + 1} className={`flex flex-col dark:bg-custom_card_bg border-[0.5px] dark:border-none mb-5 w-2/3 rounded-md rounded-tr-none p-2 ${index % 2 === 0 && "ml-auto"}`}>
                                     <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae.</p>
                                     <span className="font-thin text-xs ml-auto">2:00 PM</span>
                                 </div>
@@ -27,7 +27,7 @@ export default function MessagesPage() {
                 {
                     [...new Array(20)].map((item, index) => {
                         return (
-                            <div key={index + 1} className={`cursor-pointer flex items-center mb-2 dark:bg-custom_card_bg p-2 border-[0.5px] rounded-md ${index === 0 && "dark:bg-custom_orange"}`}>
+                            <div key={index + 1} className={`cursor-pointer flex items-center mb-2 dark:bg-custom_card_bg p-2 border-[0.5px] dark:border-none rounded-md ${index === 0 && "dark:bg-custom_orange"}`}>
                                 <Avatar className="outline-none focus:hidden me-4">
                                     <AvatarImage src="" />
                                     <AvatarFallback>AS</AvatarFallback>

@@ -3,7 +3,7 @@ import FeedPost from "@/components/FeedPost";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="h-[78vh]">
       <FeedPost />
       {
         [...new Array(6)].map((item, index) => {

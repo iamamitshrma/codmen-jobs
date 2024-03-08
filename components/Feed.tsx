@@ -11,7 +11,7 @@ import { Heart, MessageSquareDashed, SendHorizontal } from "lucide-react"
 
 export default function Feed() {
     return (
-        <Card className="mb-6">
+        <Card className="mb-6 shadow-md">
             <CardHeader className="py-2 px-3">
                 <div className="flex items-center">
                     <Avatar className="outline-none focus:hidden me-5">

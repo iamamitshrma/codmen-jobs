@@ -6,7 +6,7 @@ import { SendHorizontal } from "lucide-react"
 
 export default function FeedPost() {
     return (
-        <div className="w-full mb-6 border-[1px] dark:bg-black p-3 rounded-md">
+        <div className="w-full mb-6 border-[1px] dark:bg-black p-3 rounded-md shadow-md">
             <Textarea className="mb-5" placeholder="What on your mind?" />
             {
                 false ? (
