@@ -1,12 +1,20 @@
+"use client"
+
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { useEffect, useRef } from "react"
 
 export default function MessagesPage() {
+    const chatRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        chatRef.current?.lastElementChild?.scrollIntoView()
+    }, []);
     return (
         <div className="flex items-center gap-4 h-[78vh]">
             <div className="w-[70%] h-[78vh] rounded-md dark:bg-black border-[0.5px] dark:border-none flex flex-col justify-between gap-1">
-                <div className="overflow-auto w-[100%] h-[90%] p-2">
+                <div ref={chatRef} className="overflow-auto w-[100%] h-[90%] p-2">
                     {
                         [...new Array(20)].map((item, index) => {
                             return (
